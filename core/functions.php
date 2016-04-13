@@ -161,3 +161,15 @@ function authenticate($user,$password,$success,$fail){
 
     $a->redirect();
 }
+
+/*
+ * translation
+ * #params:
+ *      $str - string, string to translate
+ *      $lang - string, language shortcut(ex: 'sr','en','de')
+ * #return: string, translated string
+ */
+function prevod($str,$lang){
+    $t = new Translate($lang);
+    return $t->trans($str);
+}

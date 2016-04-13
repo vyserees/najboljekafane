@@ -23,7 +23,8 @@ function class_autoloader()
         APP_PATH.'helpers/pop3.php',
         APP_PATH.'helpers/query.php',
         APP_PATH.'helpers/smtp.php',
-        APP_PATH.'helpers/tables.php'
+        APP_PATH.'helpers/tables.php',
+        APP_PATH.'helpers/translate.php'
     );
     foreach ($possible_locations as $location) {
         if (file_exists($location)) {
