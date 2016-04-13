@@ -22,8 +22,8 @@ class Translate {
 	
 	public function trans($str) {	
         if (!array_key_exists($this->language, $this->lang)) {
-            if (file_exists('languages/'.$this->language.'.txt')) {
-                $strings = array_map(array($this,'splitStrings'),file('assets/locale/'.$this->language.'.txt'));
+            if (file_exists('locale/'.$this->language.'.txt')) {
+                $strings = array_map(array($this,'splitStrings'),file('locale/'.$this->language.'.txt'));
                 foreach ($strings as $k => $v) {
 					$this->lang[$this->language][$v[0]] = $v[1];
                 }

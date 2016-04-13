@@ -509,7 +509,7 @@ class PHPMailer
     protected $boundary = array();
 
     /**
-     * The array of available languages.
+     * The array of available locale.
      * @type array
      * @access protected
      */
